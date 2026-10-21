@@ -1,0 +1,56 @@
+.shop-carousel {
+  background-color: #212529;
+}
+
+.shop-carousel__image {
+  display: block;
+  width: 100%;
+  height: clamp(20rem, 55vw, 36rem);
+  object-fit: cover;
+  filter: brightness(0.68);
+}
+
+.shop-carousel__caption {
+  right: 12%;
+  bottom: 18%;
+  left: 12%;
+  text-align: left;
+}
+
+.shop-carousel__caption h2 {
+  max-width: 32rem;
+  margin-bottom: 0.75rem;
+  font-size: clamp(2rem, 5vw, 4rem);
+  font-weight: 700;
+}
+
+.shop-carousel__caption p {
+  max-width: 28rem;
+  margin-bottom: 1.5rem;
+  font-size: clamp(1rem, 2vw, 1.25rem);
+}
+
+.shop-carousel__link {
+  display: inline-block;
+  padding: 0.7rem 1.25rem;
+  border-radius: 0.25rem;
+  background-color: #432cd8;
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.shop-carousel__link:hover,
+.shop-carousel__link:focus-visible {
+  background-color: #3020a4;
+  color: #fff;
+}
+
+@media (max-width: 576px) {
+  .shop-carousel__caption {
+    right: 15%;
+    bottom: 15%;
+    left: 15%;
+  }
+}
